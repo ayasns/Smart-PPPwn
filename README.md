@@ -9,6 +9,7 @@ This is the C++ rewrite of [PPPwn](https://github.com/TheOfficialFloW/PPPwn) (wi
 - Run faster under Windows (more accurate sleep time)
 - Restart automatically when failing
 - Can be compiled as a library integrated into your application
+- Colourized 
 
 # Nightly build
 
@@ -56,6 +57,8 @@ pppwn --interface en0 --fw 1100 --stage1 "stage1.bin" --stage2 "stage2.bin" --ti
 - `--ipv6`: Use your own ipv6. Doesn't check for correct formatting, use with caution. Can be useful for testing exploit parts or useful on difficult consoles.
 - `-a` `--auto-retry`: automatically retry when fails or timeout
 - `-nw` `--no-wait-padi`: don't wait one more [PADI](https://en.wikipedia.org/wiki/Point-to-Point_Protocol_over_Ethernet#Client_to_server:_Initiation_(PADI)) before starting the exploit
+- `-cd`, `--corrupt-delay`
+                    Delay in seconds between sending corrupt packets (Default: `0`)
 - `-rs` `--real-sleep`: use CPU for more precise sleep time (Only used when execution speed is too slow)
 - `--web`: use the web interface
 - `--url`: the url of the web interface (default: `0.0.0.0:7796`)
