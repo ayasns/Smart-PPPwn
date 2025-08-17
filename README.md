@@ -80,8 +80,8 @@ flowchart TB
         D -->|No| F[Auto-Restart]
     end
     
-    style A fill:#9f9,stroke:#333
-    style D fill:#f96,stroke:#333
+style A fill:#393,stroke:#333  
+style D fill:#933,stroke:#333  
 ```
 # Nightly build
 
