@@ -42,6 +42,40 @@ graph LR
     D[Windows Optimizations] --> E[Faster Execution]
     D --> F[Accurate Sleep]
 ```
+# 🔄 Reliability & Recovery
+
+- **Auto-restart** Self-healing mechanism on failure detection
+
+- **Pro model stability** 100% success rate on PS4 Pro with optimized packet timing
+
+- **Partial shutdown resilience** Improved handling of improperly shutdown PS4 systems
+-
+# 🛠 Developer Integration
+
+- **Library mode** Compile as integratable component for custom applications
+
+- **Full exploit control** Customizable parameters for advanced users
+
+- **Validation suite** Built-in checks for:
+
+```Spray_NUM values```
+
+```HOLE_START positions```
+
+```HOLE_SPACE parameters```
+```mermaid
+flowchart TB
+    subgraph Exploit_Flow
+        A[Initialize] --> B[Parameter Validation]
+        B --> C[Payload Injection]
+        C --> D{Success?}
+        D -->|Yes| E[Post-Exploit]
+        D -->|No| F[Auto-Restart]
+    end
+    
+    style A fill:#9f9,stroke:#333
+    style D fill:#f96,stroke:#333
+```
 # Nightly build
 
 You can download the latest build from [nightly.link](https://nightly.link/nn9dev/PPPwn_cpp/workflows/ci.yaml/main?status=completed).
