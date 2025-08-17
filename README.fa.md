@@ -315,8 +315,3 @@ cmake --build build -t pppwn
 </div>
 ```
 
-### Key Features of This Translation:
-1. **Full RTL Support**: Wrapped in `<div dir="rtl" align="right">` for proper Persian rendering
-2. **Technical Terms Preserved**: Kept all code/command syntax exactly as-is
-3. **Complete Markdown Formatting**: Maintained all headers, tables, mermaid diagrams
-4. **Cultural Adaptation**: Translated humor/slang appropriately ("you are my fart" → "گوز باحالی هستید")
