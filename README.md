@@ -1,11 +1,22 @@
 # PPPwn c++
-pie
-    title Exploit Component Size Distribution
-    “Payload Handlers” : 35
-    “Network Stack” : 25
-    “PPPoE Protocol” : 20
-    “Kernel Interaction” : 15
-    “Utilities” : 5
+# 🧙‍♂️ PPPwn-Dolphini - PlayStation 4 PPPoE Exploit for Dolphin Emulator
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
+[![Dolphin Version](https://img.shields.io/badge/Dolphin-5.0%2B-green)](https://dolphin-emu.org)
+
+> Kernel-level exploit for PlayStation 4 via PPPoE, adapted for Dolphin emulator environments
+
+## 🌟 Overview
+PPPwn-Dolphini is a powerful adaptation of the PPPwn exploit designed specifically for use with the Dolphin emulator. This implementation allows security researchers to safely analyze and test PlayStation 4 kernel vulnerabilities in an emulated environment.
+
+```mermaid
+graph LR
+    A[PS4 System] -->|Original Target| B(Physical Hardware)
+    A -->|Emulated Environment| C[Dolphin Emulator]
+    C --> D[PPPwn-Dolphini]
+    D --> E[Kernel Exploit]
+    E --> F[Code Execution]
     
 This is the C++ rewrite of [PPPwn](https://github.com/TheOfficialFloW/PPPwn) (with [additions](https://github.com/nn9dev/PPPwn_cpp#on-_num-options)!)
 
