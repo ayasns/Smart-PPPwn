@@ -10,14 +10,13 @@
 ## 🌟 Overview
 PPPwn-Dolphini is a powerful adaptation of the PPPwn exploit designed specifically for use with the Dolphin emulator. This implementation allows security researchers to safely analyze and test PlayStation 4 kernel vulnerabilities in an emulated environment.
 
-```mermaid
-graph LR
-    A[PS4 System] -->|Original Target| B(Physical Hardware)
-    A -->|Emulated Environment| C[Dolphin Emulator]
-    C --> D[PPPwn-Dolphini]
-    D --> E[Kernel Exploit]
-    E --> F[Code Execution]
-```
+graph TD
+    A[Attacker Machine] -->|PPPoE Connection| B(PlayStation 4)
+    B -->|Vulnerable Firmware| C[Kernel Exploit]
+    C --> D[Privilege Escalation]
+    D --> E[Custom Payload Execution]
+    E --> F[Persistent Access]
+    
     
 This is the C++ rewrite of [PPPwn](https://github.com/TheOfficialFloW/PPPwn) (with [additions](https://github.com/nn9dev/PPPwn_cpp#on-_num-options)!)
 
