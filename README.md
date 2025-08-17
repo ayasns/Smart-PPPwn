@@ -3,11 +3,12 @@
 Choose language: / زبان مورد نظر انتخاب کنید  
 [English 🇬🇧](README.en.md) | [فارسی 🇮🇷](README.fa.md)
 
-## 💬 Support & Discussion
+## 💬 Support & Discussion / پشتیبانی و بحث و گفتگو
 
 <div align="center">
   
 [![Telegram Support](https://img.shields.io/badge/Join_Our_Telegram_Group-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/pppwn_ps4)
+[![گروه تلگرامی ما](https://img.shields.io/badge/Join_Our_Telegram_Group-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/pppwn_ps4)
 
 </div>
 
