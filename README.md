@@ -3,9 +3,14 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPb7CTUTWR7O48RF_kMAuHG3FNMeQlzZrSAw&s" width="20" alt="Dolphin"/> **PPPwn-Dolphin**
 # 🧙‍♂️ PPPwn-Dolphini - PlayStation 4 PPPoE Exploit for Windows / Linux
 
+![PlayStation](https://img.shields.io/badge/PlayStation-003791?style=flat&logo=playstation&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
-![PlayStation](https://img.shields.io/badge/PlayStation-003791?style=flat&logo=playstation&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat&logo=cmake&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=black)
+![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white)
 
 > Kernel-level exploit for PlayStation 4 via PPPoE, adapted for Dolphin emulator environments
 
