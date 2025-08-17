@@ -1,4 +1,5 @@
 # Smart PPPwn c++
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/00/PlayStation_logo.svg" width="16" alt="PS Logo"/> **PS4 Exploit**
 # 🧙‍♂️ PPPwn-Dolphini - PlayStation 4 PPPoE Exploit for Windows / Linux
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
