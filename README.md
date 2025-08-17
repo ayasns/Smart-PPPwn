@@ -228,7 +228,7 @@ graph TD
 |-------|------|-------------|---------|-------------|
 | `-sn` | `--spray-num` | Number of sprays | `0x1000` | `0x1000-0x1500` |
 | `-pn` | `--pin-num` | CPU core wait cycles | `0x1000` | Keep default |
-| `-cn` | `--corrupt-num` | Overflow packets to send | `0x1` | `0x1-0x40` |
+| `-cn` | `--corrupt-num` | Overflow packets to send | `0x1` | `0x1` or `0x2` |
 
 ### 🛠️ Utility Options
 | Short | Long | Description | Default |
