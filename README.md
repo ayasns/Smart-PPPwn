@@ -8,7 +8,7 @@
 > Kernel-level exploit for PlayStation 4 via PPPoE, adapted for Dolphin emulator environments
 
 ## 🌟 Overview
-PPPwn-Dolphini is a powerful adaptation of the PPPwn exploit designed specifically for use with the Dolphin emulator. This implementation allows security researchers to safely analyze and test PlayStation 4 kernel vulnerabilities in an emulated environment.
+PPPwn-Dolphini is a powerful adaptation of the PPPwn exploit designed specifically for use with the Windows / Linux. This implementation allows security researchers to safely analyze and test PlayStation 4 kernel vulnerabilities in an emulated environment.
 
 ```mermaid
 pie
