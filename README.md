@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
-[![Dolphin Version](https://img.shields.io/badge/Dolphin-5.0%2B-green)](https://dolphin-emu.org)
+![PlayStation](https://img.shields.io/badge/PlayStation-003791?style=flat&logo=playstation&logoColor=white)
 
 > Kernel-level exploit for PlayStation 4 via PPPoE, adapted for Dolphin emulator environments
 
