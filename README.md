@@ -196,7 +196,56 @@ graph TD
     D --> I[--groom-delay]
     D --> J[--wait-after-pin]
 ```
+## ⚙️ Configuration Options
 
+### 🔧 Core Parameters
+| Short | Long | Description | Default |
+|-------|------|-------------|---------|
+| `-i` | `--interface` | Network interface connected to PS4 | *Required* |
+| `--fw` | | Target PS4 firmware version | `1100` |
+| `-s1` | `--stage1` | Path to stage1 payload | `stage1/stage1.bin` |
+| `-s2` | `--stage2` | Path to stage2 payload | `stage2/stage2.bin` |
+| `-t` | `--timeout` | PS4 response timeout (0=infinite) | `0` |
+
+### ⏱ Timing Control
+| Short | Long | Description | Default | Recommended |
+|-------|------|-------------|---------|-------------|
+| `-wap` | `--wait-after-pin` | Wait time after CPU pinning (seconds) | `1` | `20` for unstable systems |
+| `-gd` | `--groom-delay` | Wait 1ms every N rounds during heap grooming | `4` | `1-4096` |
+| `-cd` | `--corrupt-delay` | Delay between corrupt packets (seconds) | `0` | `1-10` |
+| `-pcd` | `--post-corrupt-delay` | Delay after corrupt packets (seconds) | `0` | `0.5-3` |
+| `-rs` | `--real-sleep` | Use CPU for precise timing | `false` | Slow systems only |
+
+### 🧠 Memory Management
+| Short | Long | Description | Default | Recommended |
+|-------|------|-------------|---------|-------------|
+| `-hsp` | `--hole-space` | Spacing between heap holes | `0x10` | `0x10-0x100` |
+| `-hs` | `--hole-start` | Starting position for heap holes | `0x400` | `0x400-0x1000` |
+| `-bs` | `--buffer-size` | PCAP buffer size (0=default) | `0` | `10240` for low-end |
+
+### 🔢 Exploit Parameters (Hex)
+| Short | Long | Description | Default | Recommended |
+|-------|------|-------------|---------|-------------|
+| `-sn` | `--spray-num` | Number of sprays | `0x1000` | `0x1000-0x1500` |
+| `-pn` | `--pin-num` | CPU core wait cycles | `0x1000` | Keep default |
+| `-cn` | `--corrupt-num` | Overflow packets to send | `0x1` | `0x1-0x40` |
+
+### 🛠️ Utility Options
+| Short | Long | Description | Default |
+|-------|------|-------------|---------|
+| `-a` | `--auto-retry` | Auto-retry on failure | `false` |
+| `-nw` | `--no-wait-padi` | Skip extra PADI wait | `false` |
+| `--web` | | Enable web interface | `false` |
+| `--url` | | Web interface URL | `0.0.0.0:7796` |
+
+## 📝 Usage Notes
+
+- **Timeout (`-t`)**: Doesn't include PADI wait time - can start before PS4 boots
+- **PADI Wait (`-nw`)**: Default waits for 2 PADI requests (improves stability)
+- **Spray Num (`-sn`)**: Values > `0x1800` may hang PS4 Pro during KASLR
+- **Corrupt Num (`-cn`)**: Best results at `0x2` with delays (`-cd 1 -pcd 1.5`)
+
+> 💡 Pro Tip: For PS4 Pro, use `-cn 0x4 -cd 2 -pcd 2 -gd 10` for best stability
 
 
 
