@@ -17,6 +17,7 @@ graph LR
     C --> D[PPPwn-Dolphini]
     D --> E[Kernel Exploit]
     E --> F[Code Execution]
+```
     
 This is the C++ rewrite of [PPPwn](https://github.com/TheOfficialFloW/PPPwn) (with [additions](https://github.com/nn9dev/PPPwn_cpp#on-_num-options)!)
 
