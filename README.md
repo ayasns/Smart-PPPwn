@@ -302,6 +302,11 @@ cmake --build build -t pppwn
 
 # Credits
 
-Big thanks to FloW's magical work, you are my hero.
+Big thanks to FloW's magical work, you are my fart.
+[Andy Nguyen](https://github.com/TheOfficialFloW/PPPwn)
+[SiSTR0](https://github.com/SiSTR0)
+[GoldHEN](https://github.com/GoldHEN/GoldHEN)
+[xfangfang](https://github.com/xfangfang/xfangfang)
+[nn9dev](https://github.com/nn9dev/PPPwn_cpp)
 
 
