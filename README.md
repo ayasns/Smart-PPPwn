@@ -173,10 +173,33 @@ Supplement:
 With help from [Borris-ta](https://github.com/Borris-ta) and [DrYenyen](https://github.com/DrYenyen/), it has been found that changing some of the variables related to the PPPwn exploit can greatly increase success. For the purposes of this note, all values will be in ***HEX.*** If you'd like to quickly test values, you can use [PPwn-Tinker-GUI](https://github.com/DrYenyen/PPPwn-Tinker-GUI) on Windows or the [PPPwn_cpp CLI](https://github.com/nn9dev/PPPwn_cpp) directly on Linux. The values get set with the new `-sn`, `-pn`, and `-cn` flags above.
 
 SPRAY_NUM is 0x1000 in the original exploit. Brief testing shows that increasing this by steps of 0x50 up to around 0x1500 results in better reliability.
+more than **0x1800** for PS4 pro you may **hanging on KASLR defeating** because Permission denied **(not recomonded above 0x1800)**
 
 PIN_NUM is 0x1000 in the original exploit. Its purpose is the time to wait on a core before proceeding with the exploit. Brief testing has shown this doesn't affect too much, so it's fine to leave this at default.
 
-CORRUPT_NUM is 0x1 in the original exploit. CORRUPT_NUM is the amout of malicious packets sent to the PS4. Breif testing shows increasing this results in much better reliability. Reccomended values are 0x1 0x2, 0x4, 0x6, 0x8, 0x10, 0x14, 0x20, 0x30, 0x40. Values too high may result in a crash.
+CORRUPT_NUM is `0x1` in the original exploit. CORRUPT_NUM is the amout of malicious packets sent to the PS4. Breif testing shows increasing this results in much better reliability. Reccomended values are 0x1 0x2, 0x4, 0x6, 0x8, 0x10, 0x14, 0x20, 0x30, 0x40. Values too high may result in a crash.
+Best value is `0x2` with delay between each sedning Corrupt number packets via `-cd, --corrupt-delay` is `1 ~ 10` and cooldown `0.5 ~ 3` seconds after sending corrupt packets via `-pcd, --post-corrupt-delay` **(increasing timing above 10sec for corrupt delay may fail the PPPwn injection)** & **(increasing timing above 5sec for post corrupt delay not recommonded and may fail end session and PPPwn injection)** 
+
+## 🛠 Command Line Options (Detailed)
+
+### 📌 Important Notes About Key Parameters
+
+```mermaid
+graph TD
+    A[Critical Parameters] --> B[Timing Control]
+    A --> C[Memory Management]
+    A --> D[Stability Tweaks]
+    B --> E[--corrupt-delay]
+    B --> F[--post-corrupt-delay]
+    C --> G[--hole-space]
+    C --> H[--hole-start]
+    D --> I[--groom-delay]
+    D --> J[--wait-after-pin]
+```
+
+
+
+
 
 # Development
 
