@@ -12,10 +12,10 @@
 ![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=flat&logo=gnu-bash&logoColor=white)
 ![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat&logo=cmake&logoColor=white)
 
-> Kernel-level exploit for PlayStation 4 via PPPoE, adapted for Dolphin emulator environments
+> Kernel-level exploit for PlayStation 4 via PPPoE, adapted by Secret Company
 
 ## 🌟 Overview
-PPPwn-Dolphini is a powerful adaptation of the PPPwn exploit designed specifically for use with the Windows / Linux. This implementation allows security researchers to safely analyze and test PlayStation 4 kernel vulnerabilities in an emulated environment.
+PPPwn-Dolphini is a powerful adaptation of the PPPwn exploit designed specifically for use with the Windows / Linux. This implementation allows security researchers to safely analyze and test injection engaine exploit PPPwn PlayStation 4 kernel vulnerabilities to find best values.
 
 ```mermaid
 pie
