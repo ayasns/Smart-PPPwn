@@ -1,5 +1,5 @@
 # PPPwn c++
-# 🧙‍♂️ PPPwn-Dolphini - PlayStation 4 PPPoE Exploit for Dolphin Emulator
+# 🧙‍♂️ PPPwn-Dolphini - PlayStation 4 PPPoE Exploit for Windows / Linux
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
@@ -139,6 +139,18 @@ pppwn --interface en0 --fw 1100 --stage1 "stage1.bin" --stage2 "stage2.bin" --ti
 | `-sn`, `--spray-num` | Number of sprays (hex/decimal) | `0x1000` (4096) |
 | `-pn`, `--pin-num` | CPU core wait cycles (hex/decimal) | `0x1000` (4096) |
 | `-cn`, `--corrupt-num` | Overflow packets to send (hex/decimal) | `0x1` (1) |
+
+# Best Tips for Buffer size best values (avoid leak overflow packet for Panic Kernel)
+### (Needs to choose manually MTU in PS4 Network settings after DNS settings)
+**switch from automatic MTU to Manually MTU may reduce Alert Memory corruption protection in PS4 and bypass firewall for bigger payloads.bin**
+**switch from Manually MTU to Automatic MTU means 1494 ~ 1496 MTU and PS4 wont cut off until 1500 MTU (Overflow leak packets may occoures)**
+- `-bs 10240` = **MTU 1280**
+- `-bs 10366` = **MTU 1295 ~ 1296**
+- `-bs 10378` = **MTU 1297 ~ 1298**
+- `-bs 10492` = **MTU 1311 ~ 1312**
+- `-bs 10768` = **MTU 1346**
+- `-bs 11080` = **MTU 1385**
+- `-bs 11124` = **MTU 1390 ~ 1391**
 
 ### 🔁 Execution Control
 | Option | Description | Default Value |
