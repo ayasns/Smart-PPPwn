@@ -141,8 +141,11 @@ pppwn --interface en0 --fw 1100 --stage1 "stage1.bin" --stage2 "stage2.bin" --ti
 | `-cn`, `--corrupt-num` | Overflow packets to send (hex/decimal) | `0x1` (1) |
 
 # Best Tips for Buffer size best values (avoid leak overflow packet for Panic Kernel)
+
 ### (Needs to choose manually MTU in PS4 Network settings after DNS settings)
+
 **switch from automatic MTU to Manually MTU may reduce Alert Memory corruption protection in PS4 and bypass firewall for bigger payloads.bin**
+
 **switch from Manually MTU to Automatic MTU means 1494 ~ 1496 MTU and PS4 wont cut off until 1500 MTU (Overflow leak packets may occoures)**
 - `-bs 10240` = **MTU 1280**
 - `-bs 10366` = **MTU 1295 ~ 1296**
