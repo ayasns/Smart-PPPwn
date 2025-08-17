@@ -30,7 +30,14 @@ This is the C++ rewrite of [PPPwn](https://github.com/TheOfficialFloW/PPPwn) (wi
 - Can be compiled as a library integrated into your application
 - Colourized
 - 
+⚡ Performance Enhancements
 
+    - Precision timing - Microsecond-level control (up to 1000x more precise than previous versions)
+
+    - Windows optimization - Specialized improvements for faster Windows execution
+
+    - Intelligent cooldown - Configurable delays between corrupt packets to prevent kernel panic
+  
 # Nightly build
 
 You can download the latest build from [nightly.link](https://nightly.link/nn9dev/PPPwn_cpp/workflows/ci.yaml/main?status=completed).
