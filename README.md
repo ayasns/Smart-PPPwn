@@ -89,20 +89,22 @@ Please refer to [#10](https://github.com/xfangfang/PPPwn_cpp/issues/10) for more
 ### show help
 
 ```shell
-pppwn
+./pppwn
 ```
 
 ### list interfaces
 
 ```shell
-pppwn list
+./pppwn list
 ```
 
 ### run the exploit
 
 ```shell
-pppwn --interface en0 --fw 1100 --stage1 "stage1.bin" --stage2 "stage2.bin" --timeout 10 --auto-retry
+./pppwn --interface en0 --fw 1001 --stage1 "stage1.bin" --stage2 "stage2.bin" --timeout 10 --auto-retry
 ```
+--
+### Best run the exploit recommonded for PS4 Pro
 ## 🛠 Command Line Options
 
 ### 🌐 Network Configuration
