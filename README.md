@@ -32,11 +32,11 @@ This is the C++ rewrite of [PPPwn](https://github.com/TheOfficialFloW/PPPwn) (wi
 - 
 ⚡ Performance Enhancements
 
-    - Precision timing - Microsecond-level control (up to 1000x more precise than previous versions)
+    - Precision timing  Microsecond-level control (up to 1000x more precise than previous versions)
 
-    - Windows optimization - Specialized improvements for faster Windows execution
+    - Windows optimization  Specialized improvements for faster Windows execution
 
-    - Intelligent cooldown - Configurable delays between corrupt packets to prevent kernel panic
+    - Intelligent cooldown  Configurable delays between corrupt packets to prevent kernel panic
   
 # Nightly build
 
