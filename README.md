@@ -1,5 +1,12 @@
 # PPPwn c++
-
+pie
+    title Exploit Component Size Distribution
+    “Payload Handlers” : 35
+    “Network Stack” : 25
+    “PPPoE Protocol” : 20
+    “Kernel Interaction” : 15
+    “Utilities” : 5
+    
 This is the C++ rewrite of [PPPwn](https://github.com/TheOfficialFloW/PPPwn) (with [additions](https://github.com/nn9dev/PPPwn_cpp#on-_num-options)!)
 
 # Features
