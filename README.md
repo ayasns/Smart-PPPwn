@@ -177,11 +177,11 @@ flowchart LR
     C --> D[Memory Mgmt]
     D --> E[Execution]
     
-    style A fill:#9f9,stroke:#333
-    style B fill:#99f,stroke:#333
-    style C fill:#f99,stroke:#333
-    style D fill:#ff9,stroke:#333
-    style E fill:#f9f,stroke:#333
+style A fill:#393,stroke:#333
+style B fill:#339,stroke:#333
+style C fill:#933,stroke:#333
+style D fill:#993,stroke:#333
+style E fill:#939,stroke:#333
 ```
 
 Supplement:
