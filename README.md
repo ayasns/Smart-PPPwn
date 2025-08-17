@@ -78,8 +78,6 @@ flowchart TB
 ```
 # Nightly build
 
-You can download the latest build from [nightly.link](https://nightly.link/nn9dev/PPPwn_cpp/workflows/ci.yaml/main?status=completed).
-
 For Windows users, you need to install [npcap](https://npcap.com) before you run this program.
 There are lots of GUI wrappers for pppwn_cpp, it's better to use them if you are not familiar with command line.
 
