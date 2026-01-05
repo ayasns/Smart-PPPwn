@@ -299,7 +299,15 @@ cmake --build build -t pppwn
 
 # کراس کامپایل برای ویندوز
 # https://npcap.com/dist/npcap-sdk-1.13.zip
-cmake -B build -DZIG_TARGET=x86_64-windows-gnu -DUSE_SYSTEM_PCAP=OFF -DPacket_ROOT=<path to npcap sdk>
+cmake -B build -S . \
+  -DZIG_TARGET=x86_64-windows-gnu \
+  -DUSE_SYSTEM_PCAP=OFF \
+  -DPacket_ROOT=./npcap-sdk-1.13 \
+  -DPCAP_INCLUDE_DIR=./npcap-sdk-1.13/Include \
+  -DPCAP_LIBRARY=./npcap-sdk-1.13/Lib/x64/wpcap.lib \
+  -DPacket_LIBRARY=./npcap-sdk-1.13/Lib/x64/Packet.lib
+
+فدم دوم:
 cmake --build build -t pppwn
 ```
 
